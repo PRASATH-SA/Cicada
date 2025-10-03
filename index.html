@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro 90s Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="gear-nav">
+        <div class="gear">
+            <div class="gear-teeth"></div>
+            <div class="gear-teeth"></div>
+            <div class="gear-teeth"></div>
+            <div class="gear-teeth"></div>
+            <div class="gear-teeth"></div>
+            <div class="gear-teeth"></div>
+            <div class="gear-teeth"></div>
+            <div class="gear-teeth"></div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax-layer layer-1" style="background-image: url('old-map-layer-1.png');"></div>
+        <div class="parallax-layer layer-2" style="background-image: url('old-map-layer-2.png');"></div>
+        <div class="parallax-layer layer-3" style="background-image: url('old-map-layer-3.png');"></div>
+        <div class="glass-morphism-container">
+            <div class="glass-morphism-box">
+                <h1>Welcome to the Retro 90s Website!</h1>
+                <p>This website is designed to look like it's from the 90s, with a retro theme and old-school fonts.</p>
+            </div>
+        </div>
+    </div>
+<script>
+const parallaxContainer = document.querySelector('.parallax-container');
+const parallaxLayers = document.querySelectorAll('.parallax-layer');
+
+window.addEventListener('scroll', () => {
+    const scrollPosition = window.scrollY;
+    parallaxLayers.forEach((layer, index) => {
+        const speed = (index + 1) * 0.1;
+        layer.style.transform = `translateY(${scrollPosition * speed}px)`;
+    });
+});
+</script>
+
+</body>
+</html>
+
