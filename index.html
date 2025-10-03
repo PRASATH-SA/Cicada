@@ -3,54 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro 90s Website</title>
+    <title>Vintage Echoes</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="gear-nav">
-        <div class="gear">
-            <div class="gear-teeth"></div>
-            <div class="gear-teeth"></div>
-            <div class="gear-teeth"></div>
-            <div class="gear-teeth"></div>
-            <div class="gear-teeth"></div>
-            <div class="gear-teeth"></div>
-            <div class="gear-teeth"></div>
-            <div class="gear-teeth"></div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+    <header class="vintage-header">
+        <nav class="gear-nav">
+            <a href="#" class="nav-item"><i class="fas fa-cog"></i> Home</a>
+            <a href="#" class="nav-item"><i class="fas fa-cog"></i> About</a>
+            <a href="#" class="nav-item"><i class="fas fa-cog"></i> Gallery</a>
+            <a href="#" class="nav-item"><i class="fas fa-cog"></i> Blog</a>
+            <a href="#" class="nav-item"><i class="fas fa-cog"></i> Contact</a>
         </nav>
-    </div>
-    <div class="parallax-container">
-        <div class="parallax-layer layer-1" style="background-image: url('old-map-layer-1.png');"></div>
-        <div class="parallax-layer layer-2" style="background-image: url('old-map-layer-2.png');"></div>
-        <div class="parallax-layer layer-3" style="background-image: url('old-map-layer-3.png');"></div>
-        <div class="glass-morphism-container">
-            <div class="glass-morphism-box">
-                <h1>Welcome to the Retro 90s Website!</h1>
-                <p>This website is designed to look like it's from the 90s, with a retro theme and old-school fonts.</p>
+        <h1 class="site-title">Vintage Echoes</h1>
+        <p class="site-tagline">Rediscover the Charm of Yesteryear</p>
+    </header>
+
+    <main class="container">
+        <section class="glass-card intro-card">
+            <h2>Welcome Back in Time</h2>
+            <p>Step into a world where nostalgia reigns supreme. Our collection is inspired by the timeless beauty of vintage postcards and classic film strips, bringing you a unique blend of old-world charm and modern elegance.</p>
+            <p>Explore our curated content and let the echoes of the past inspire your present.</p>
+        </section>
+
+        <section class="glass-card content-card">
+            <h3>Our Story</h3>
+            <p>Every piece tells a tale, much like the handwritten notes on a weathered postcard. We believe in preserving the aesthetic of bygone eras, creating digital experiences that feel tangible and memorable.</p>
+            <p>From sepia tones to intricate details, our design philosophy is rooted in authenticity and a deep appreciation for history.</p>
+        </section>
+
+        <section class="glass-card gallery-preview">
+            <h3>Gallery Snapshot</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
             </div>
-        </div>
-    </div>
-<script>
-const parallaxContainer = document.querySelector('.parallax-container');
-const parallaxLayers = document.querySelectorAll('.parallax-layer');
+            <p class="view-more"><a href="#">View More Curiosities...</a></p>
+        </section>
+    </main>
 
-window.addEventListener('scroll', () => {
-    const scrollPosition = window.scrollY;
-    parallaxLayers.forEach((layer, index) => {
-        const speed = (index + 1) * 0.1;
-        layer.style.transform = `translateY(${scrollPosition * speed}px)`;
-    });
-});
-</script>
-
+    <footer class="vintage-footer">
+        <p>&copy; 2023 Vintage Echoes. All rights reserved.</p>
+    </footer>
 </body>
 </html>
-
