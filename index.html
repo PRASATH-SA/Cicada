@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<body>
+<body onclick="pla()">
     <header class="vintage-header">
         <nav class="gear-nav">
             <a href="#" class="nav-item"><i class="fas fa-cog"></i> Home</a>
@@ -38,9 +38,9 @@
         <section class="glass-card gallery-preview">
             <h3>Gallery Snapshot</h3>
             <div class="gallery-grid">
-                <div class="gallery-item"></div>
-                <div class="gallery-item"></div>
-                <div class="gallery-item"></div>
+                <div class="gallery-item item-1"></div>
+                <div class="gallery-item item-2"></div>
+                <div class="gallery-item item-3"></div>
             </div>
             <p class="view-more"><a href="#">View More Curiosities...</a></p>
         </section>
@@ -49,5 +49,13 @@
     <footer class="vintage-footer">
         <p>&copy; 2023 Vintage Echoes. All rights reserved.</p>
     </footer>
+    <audio src="https://cdn.masstamilan.free/play/hash/72972/1" autoplay controls></audio>
+    <script>
+       function pla(){
+        aud = document.querySelector('audio');
+        aud.play();
+       } 
+        
+    </script>
 </body>
 </html>

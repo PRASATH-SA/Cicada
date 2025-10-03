@@ -1,7 +1,7 @@
-@font-face {
+/* @font-face {
     font-family: jeevan;
     src: url('https://dl.dafont.com/dl/?f=retro_british');
-}
+} */
 :root {
     --vintage-cream: #f8f0e3;
     --vintage-brown: #a0846c;
@@ -150,7 +150,7 @@ body {
     background-color: var(--vintage-cream);
     border: 1px solid var(--vintage-accent);
     border-radius: 8px;
-    height: 150px; /* Placeholder height */
+    height: 250px; /* Placeholder height */
     box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
     display: flex;
     justify-content: center;
@@ -160,6 +160,7 @@ body {
     background-image: url('https://via.placeholder.com/180x150/dcc1ab/5c4b3f?text=Photo'); /* Placeholder images */
     background-size: cover;
     background-position: center;
+    background-blend-mode: color-burn;
 }
 .gallery-item:nth-child(2) {
     background-image: url('https://via.placeholder.com/180x150/c2a78e/5c4b3f?text=Photo+2');
@@ -195,4 +196,16 @@ body {
     margin-top: 50px;
     font-size: 0.9em;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+.item-1{
+    background-image: url('https://media.licdn.com/dms/image/v2/D5603AQE2S0o7cekBoQ/profile-displayphoto-shrink_200_200/B56Zl0kpZLI0AY-/0/1758597389957?e=1762387200&v=beta&t=395ceH4WiSQ8qSnZ7FiY6QNmDueprEutehKb7y2R-gM');
+    background-position: center;
+}
+.item-2{
+    background-image: url('https://media.licdn.com/dms/image/v2/D4D03AQHMtAxwUTNz1w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1694322470791?e=1762387200&v=beta&t=BmPqRtvBxLpXGZlol4Ww0y9QfVIWExwTNh0XF0OQHb4') !important;
+    background-position: center;
+}
+.item-3{
+    background-image: url('abhishek.webp') !important;
+    background-position: center;
 }
