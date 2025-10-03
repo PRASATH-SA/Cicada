@@ -1,3 +1,7 @@
+@font-face {
+    font-family: jeevan;
+    src: url('https://dl.dafont.com/dl/?f=retro_british');
+}
 :root {
     --vintage-cream: #f8f0e3;
     --vintage-brown: #a0846c;
