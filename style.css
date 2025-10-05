@@ -150,8 +150,9 @@ body {
     background-color: var(--vintage-cream);
     border: 1px solid var(--vintage-accent);
     border-radius: 8px;
-    height: 250px; /* Placeholder height */
+    height: 300px; /* Placeholder height */
     box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+    filter: sepia(100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -160,7 +161,6 @@ body {
     background-image: url('https://via.placeholder.com/180x150/dcc1ab/5c4b3f?text=Photo'); /* Placeholder images */
     background-size: cover;
     background-position: center;
-    background-blend-mode: color-burn;
 }
 .gallery-item:nth-child(2) {
     background-image: url('https://via.placeholder.com/180x150/c2a78e/5c4b3f?text=Photo+2');
@@ -198,14 +198,77 @@ body {
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 .item-1{
-    background-image: url('https://media.licdn.com/dms/image/v2/D5603AQE2S0o7cekBoQ/profile-displayphoto-shrink_200_200/B56Zl0kpZLI0AY-/0/1758597389957?e=1762387200&v=beta&t=395ceH4WiSQ8qSnZ7FiY6QNmDueprEutehKb7y2R-gM');
+    background-image: url('Redcard.jpeg');
     background-position: center;
 }
 .item-2{
-    background-image: url('https://media.licdn.com/dms/image/v2/D4D03AQHMtAxwUTNz1w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1694322470791?e=1762387200&v=beta&t=BmPqRtvBxLpXGZlol4Ww0y9QfVIWExwTNh0XF0OQHb4') !important;
+    background-image: url('anbesivam.jpeg') !important;
     background-position: center;
 }
 .item-3{
-    background-image: url('abhishek.webp') !important;
+    background-image: url('maestro.jpeg') !important;
     background-position: center;
+}
+
+
+   /* The side navigation menu */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  background-image: url(bg.jpg);
+  position: fixed;
+  top:0px;
+  height: 100%;
+  overflow: auto;
+  z-index: 10;
+  filter: sepia(50%);
+
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  /* .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;} */
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
 }

@@ -7,36 +7,32 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
-<body onclick="pla()" style="background-image: url('bg.jpg') !important;">
-    <header class="vintage-header">
-        <nav class="gear-nav">
-            <a href="#" class="nav-item"><i class="fas fa-cog"></i> Home</a>
-            <a href="#" class="nav-item"><i class="fas fa-cog"></i> About</a>
-            <a href="#" class="nav-item"><i class="fas fa-cog"></i> Gallery</a>
-            <a href="#" class="nav-item"><i class="fas fa-cog"></i> Blog</a>
-            <a href="#" class="nav-item"><i class="fas fa-cog"></i> Contact</a>
-        </nav>
-        <h1 class="site-title">Vintage Echoes</h1>
-        <h2 style="font-family: jeevan;">Jeevan Vibes</h2>
-        <p class="site-tagline">Rediscover the Charm of Yesteryear</p>
-    </header>
+<body style="background-image: url('bg.jpg') !important;">
+    <!-- The sidebar -->
+    <div class="sidebar">
+    <a class="active" href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    </div>
 
     <main class="container">
-        <section class="glass-card intro-card">
+        <section class="glass-card intro-card animate__animated animate__flip ">
             <h2>Welcome Back in Time</h2>
             <p>Step into a world where nostalgia reigns supreme. Our collection is inspired by the timeless beauty of vintage postcards and classic film strips, bringing you a unique blend of old-world charm and modern elegance.</p>
             <p>Explore our curated content and let the echoes of the past inspire your present.</p>
         </section>
 
-        <section class="glass-card content-card">
+        <section class="glass-card content-card animate__animated animate__lightSpeedInRight">
             <h3>Our Story</h3>
             <p>Every piece tells a tale, much like the handwritten notes on a weathered postcard. We believe in preserving the aesthetic of bygone eras, creating digital experiences that feel tangible and memorable.</p>
             <p>From sepia tones to intricate details, our design philosophy is rooted in authenticity and a deep appreciation for history.</p>
         </section>
 
-        <section class="glass-card gallery-preview">
-            <h3>Gallery Snapshot</h3>
+        <section class="glass-card gallery-preview animate__animated animate__lightSpeedInLeft">
+            <h3>Gallery</h3>
             <div class="gallery-grid">
                 <div class="gallery-item item-1"></div>
                 <div class="gallery-item item-2"></div>
@@ -49,13 +45,5 @@
     <footer class="vintage-footer">
         <p>&copy; 2025 Cicada team. All rights reserved.</p>
     </footer>
-    <audio src="https://cdn.masstamilan.free/play/hash/72972/1" style="opacity: 0;" autoplay controls></audio>
-    <script>
-       function pla(){
-        aud = document.querySelector('audio');
-        aud.play();
-       } 
-        
-    </script>
 </body>
 </html>
