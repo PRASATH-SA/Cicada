@@ -153,6 +153,7 @@ body {
     height: 300px; /* Placeholder height */
     box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
     filter: sepia(100%);
+    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -274,4 +275,28 @@ div.content {
 }
 .hidden{
     visibility: hidden;
+}
+
+::-webkit-scrollbar{
+    width:30px;
+    background-image: url('bg.jpg');
+}
+::-webkit-scrollbar-button{
+    width: 100%;
+    height:30px;
+    background-color: black;
+    background-image: url('brick.png');
+    background-size: 100%;
+    background-repeat: none;
+}
+::-webkit-scrollbar-track{
+    background-image: url('brick.png');
+}
+::-webkit-scrollbar-corner{
+    background-color: black;
+    /* background-image: url('brick.png'); */
+}
+::-webkit-scrollbar-thumb{
+    background-image: url('bg.jpg');
+    background-color: black;
 }
