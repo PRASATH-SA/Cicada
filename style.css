@@ -272,3 +272,6 @@ div.content {
     float: none;
   }
 }
+.hidden{
+    visibility: hidden;
+}
