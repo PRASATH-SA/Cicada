@@ -10,16 +10,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body style="background-image: url('bg.jpg') !important;">
+   
     <!-- The sidebar -->
     <div class="sidebar animate__animated animate__bounceInLeft" id="sidebar">
+        
+        <div class="collapsed">
+            <a class="active" href="#home">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20px" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"  />
+</svg>
 
-        <a class="active" href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
+            </a>
+            <a href="#news">News</a>
+            <a href="#contact">G</a>
+            <a href="#about">About</a>
+        </div>
+
+        <div class="expanded hidden">
+            <a class="active" href="#home">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
     </div>
 
     <main class="container">
+        <section class="glass-card intro-card animate__animated animate__swing"><h1>VINTAGE CICADA</h1></section>
+
         <section class="glass-card intro-card animate__animated animate__bounceInUp ">
             <h2>Welcome Back in Time</h2>
             <p>Step into a world where nostalgia reigns supreme. Our collection is inspired by the timeless beauty of vintage postcards and classic film strips, bringing you a unique blend of old-world charm and modern elegance.</p>
@@ -41,6 +58,54 @@
             </div>
             <p class="view-more"><a href="#">View More Curiosities...</a></p>
         </section>
+
+    <section id="hero" class="glass-card intro-card animate__animated animate__swing">
+      <div class="image-container">
+        <img src="IMAGE1.jpg" alt="Kollywood Sunset Silhouette">
+      </div>
+      <h1>The Dawn of Tamil Cinema’s Golden Age</h1>
+      <p>Tamil cinema, fondly known as <strong>Kollywood</strong>, began its journey in the early 1900s — where stories met sound and dreams met the silver screen. 
+      From the sepia days of MKT and N.S. Krishnan to the grandeur of modern filmmaking, Kollywood has painted emotions on celluloid that still echo in every Tamil heart.</p>
+      <blockquote><em>“Cinema is not just a story — it’s the soul of Tamil Nadu, captured in motion.”</em></blockquote>
+    </section>
+
+    <!-- Style Era Section -->
+    <section id="era" class="glass-card intro-card animate__animated animate__swing">
+      <div class="image-container">
+        <img src="IMAGE2.jpg" alt="Kollywood Style Era">
+      </div>
+      <h2>The 70s: When Swagger Met Cinema</h2>
+      <p>The 1970s changed Tamil cinema forever. Directors like <strong>K. Balachander</strong> and <strong>Bharathiraja</strong> redefined storytelling, while actors like <strong>Rajinikanth</strong> and <strong>Kamal Haasan</strong> brought realism, style, and depth to every frame.</p>
+      <p><strong>Fun Fact:</strong> Rajinikanth’s first major role was in <em>Apoorva Raagangal (1975)</em> — directed by K. Balachander, the man who introduced two future legends of Indian cinema.</p>
+      <blockquote><em>“Style isn’t what you wear — it’s how you walk into a frame.”</em></blockquote>
+    </section>
+
+    <!-- Artistic Emotion Section -->
+    <section id="poet" class="glass-card intro-card animate__animated animate__swing">
+      <div class="image-container">
+        <img src="IMAGE3.jpg" alt="Kollywood Emotion Scene">
+      </div>
+      <h2>The Art of Emotion and Expression</h2>
+      <p>The golden 80s and 90s brought stories that spoke to the soul. 
+      Films like <em>Nayakan</em>, <em>Mouna Ragam</em>, and <em>Anbe Sivam</em> blurred the line between art and life. 
+      The era celebrated directors like <strong>Mani Ratnam</strong> and <strong>Bharathiraja</strong>, who transformed emotions into timeless classics.</p>
+      <p><strong>Fun Fact:</strong> Kamal Haasan’s <em>Nayakan (1987)</em> was ranked among the <em>Top 100 Greatest Films of All Time</em> by TIME Magazine.</p>
+      <blockquote><em>“Kollywood doesn’t just entertain — it enlightens.”</em></blockquote>
+    </section>
+
+    <!-- Vintage Facts -->
+    <section id="facts" class="glass-card intro-card animate__animated animate__swing">
+      <h2>Did You Know?</h2>
+      <ul>
+        <li>The first Tamil talkie film was <em>Kalidas (1931)</em>.</li>
+        <li><em>Parasakthi (1952)</em> introduced the fiery dialogues of <strong>Karunanidhi</strong>, changing Tamil cinema forever.</li>
+        <li><strong>Sivaji Ganesan</strong> was globally recognized for his acting brilliance, even honored by world leaders.</li>
+        <li><strong>Vaijayanthimala</strong> and <strong>Padmini</strong> brought classical dance to Tamil films.</li>
+        <li><strong>Ilaiyaraaja</strong> revolutionized film music in 1976 with his fusion of folk and Western styles.</li>
+      </ul>
+    </section>
+
+
     </main>
 
     <footer class="vintage-footer">

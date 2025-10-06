@@ -1,3 +1,7 @@
+
+h1{
+    text-align: center;
+}
 /* @font-face {
     font-family: jeevan;
     src: url('https://dl.dafont.com/dl/?f=retro_british');
@@ -26,7 +30,7 @@ body {
 body {
     background: var(--vintage-cream); /* Fallback solid color */
     background-image: linear-gradient(to bottom right, var(--vintage-cream), var(--vintage-accent)); /* Fallback gradient */
-    background-image: url('https://via.placeholder.com/1920x1080/f0e6d6/5c4b3f?text=Vintage+Paper+Texture'); /* Another placeholder option */
+    background-image: url('bg.jpg'); /* Another placeholder option */
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
