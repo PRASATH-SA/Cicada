@@ -27,7 +27,9 @@ body{
     width: 780px;
     margin: 20px;
     height: 290px;
-    background-color: aquamarine;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(249, 243, 206);
 }
 .container img{
     margin-right: 80px;
