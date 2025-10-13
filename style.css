@@ -31,7 +31,7 @@ body{
 }
 .container img{
     margin-right: 80px;
-    transform: translateX(-150%);
+    /* transform: translateX(); */
 }
 .gallery{
     align-items: center;
@@ -44,4 +44,9 @@ body{
     margin:10px;
     /* border: 1px solid black; */
     box-shadow: 1px 1px 5px black;
+}
+hr{
+    height:2px;
+    width: 80%;
+    background-color: black;
 }
